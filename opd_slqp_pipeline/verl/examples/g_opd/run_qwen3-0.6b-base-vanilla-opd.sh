@@ -16,6 +16,11 @@ MAX_RESPONSE_LENGTH="${MAX_RESPONSE_LENGTH:-2048}"
 OUTPUT_DIR="${OUTPUT_DIR:-/G-OPD-checkpoints/Qwen3-0.6B-Base-Vanilla-OPD}"
 SAVE_FREQ="${SAVE_FREQ:-50}"
 MAX_ACTOR_CKPTS="${MAX_ACTOR_CKPTS:-2}"
+ENABLE_GRADIENT_CHECKPOINTING="${ENABLE_GRADIENT_CHECKPOINTING:-true}"
+ACTOR_PPO_MICRO_BATCH_SIZE_PER_GPU="${ACTOR_PPO_MICRO_BATCH_SIZE_PER_GPU:-4}"
+ROLLOUT_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU="${ROLLOUT_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU:-4}"
+REF_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU="${REF_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU:-4}"
+VLLM_GPU_MEMORY_UTILIZATION="${VLLM_GPU_MEMORY_UTILIZATION:-0.6}"
 
 python3 -m verl.trainer.main_ppo \
     algorithm.adv_estimator=grpo \
@@ -34,7 +39,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.model.path="$STUDENT_MODEL" \
     +actor_rollout_ref.ref.model.path="$TEACHER_MODEL" \
     actor_rollout_ref.model.use_remove_padding=true \
-    actor_rollout_ref.model.enable_gradient_checkpointing=true \
+    actor_rollout_ref.model.enable_gradient_checkpointing="$ENABLE_GRADIENT_CHECKPOINTING" \
     actor_rollout_ref.actor.optim.lr=1e-5 \
     actor_rollout_ref.actor.optim.lr_warmup_steps_ratio=0.0 \
     actor_rollout_ref.actor.policy_loss.only_reverse_kl_advantages=true \
@@ -42,7 +47,7 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.policy_loss.multi_teacher_distill=false \
     actor_rollout_ref.actor.policy_loss.slqp.enabled=false \
     actor_rollout_ref.actor.ppo_mini_batch_size="$TRAIN_BATCH_SIZE" \
-    actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu=4 \
+    actor_rollout_ref.actor.ppo_micro_batch_size_per_gpu="$ACTOR_PPO_MICRO_BATCH_SIZE_PER_GPU" \
     actor_rollout_ref.actor.ppo_epochs=1 \
     actor_rollout_ref.actor.shuffle=false \
     actor_rollout_ref.actor.entropy_coeff=0 \
@@ -52,12 +57,12 @@ python3 -m verl.trainer.main_ppo \
     actor_rollout_ref.actor.fsdp_config.optimizer_offload=false \
     actor_rollout_ref.rollout.name=vllm \
     actor_rollout_ref.rollout.n=1 \
-    actor_rollout_ref.rollout.log_prob_micro_batch_size_per_gpu=4 \
+    actor_rollout_ref.rollout.log_prob_micro_batch_size_per_gpu="$ROLLOUT_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU" \
     actor_rollout_ref.rollout.tensor_model_parallel_size=1 \
-    actor_rollout_ref.rollout.gpu_memory_utilization=0.5 \
+    actor_rollout_ref.rollout.gpu_memory_utilization="$VLLM_GPU_MEMORY_UTILIZATION" \
     actor_rollout_ref.rollout.temperature=1.0 \
     actor_rollout_ref.rollout.top_p=1.0 \
-    actor_rollout_ref.ref.log_prob_micro_batch_size_per_gpu=4 \
+    actor_rollout_ref.ref.log_prob_micro_batch_size_per_gpu="$REF_LOG_PROB_MICRO_BATCH_SIZE_PER_GPU" \
     actor_rollout_ref.ref.fsdp_config.param_offload=false \
     reward_model.reward_manager=naive \
     trainer.critic_warmup=0 \

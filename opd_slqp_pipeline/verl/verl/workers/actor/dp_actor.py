@@ -136,19 +136,15 @@ class DataParallelPPOActor(BasePPOActor):
         if not return_last_hidden:
             return self.actor_module(**kwargs), None
 
-        capture = {}
-
-        def capture_output(_module, _inputs, output):
-            capture["last_hidden"] = output[0] if isinstance(output, tuple) else output
-
-        handle = self._find_final_norm_module().register_forward_hook(capture_output)
-        try:
-            output = self.actor_module(**kwargs)
-        finally:
-            handle.remove()
-        if "last_hidden" not in capture:
-            raise RuntimeError("SLQP final hidden-state hook did not run")
-        return output, capture["last_hidden"]
+        # Request hidden states through the model's supported output contract.
+        # A temporary forward hook on the final norm can retain an intermediate
+        # tensor whose lifetime is not safe across FSDP/Ray CUDA execution, and
+        # caused an illegal-memory-access crash during the SLQP backward pass.
+        output = self.actor_module(output_hidden_states=True, **kwargs)
+        hidden_states = getattr(output, "hidden_states", None)
+        if not hidden_states:
+            raise RuntimeError("SLQP model forward did not return hidden states")
+        return output, hidden_states[-1]
 
     def _forward_micro_batch(
         self,
