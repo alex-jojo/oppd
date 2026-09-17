@@ -1,0 +1,2244 @@
+{
+  "version": 2,
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "hidden_size": 1024,
+  "samples": 200,
+  "max_new_tokens": 4096,
+  "feature_names": [
+    "response_prompt_distance_mean",
+    "response_prompt_distance_std",
+    "response_step_distance_mean",
+    "response_step_distance_std"
+  ],
+  "excluded_special_token_ids": [
+    151643,
+    151644,
+    151645,
+    151646,
+    151647,
+    151648,
+    151649,
+    151650,
+    151651,
+    151652,
+    151653,
+    151654,
+    151655,
+    151656
+  ],
+  "token_inclusion_rule": "generated response tokens excluding tokenizer special tokens",
+  "hidden_dtype": "float16",
+  "hidden_coverage": "every response token",
+  "contains": [
+    "response text and token ids",
+    "prompt token ids",
+    "every response-token final hidden",
+    "prompt-end hidden",
+    "response mean hidden",
+    "response last-token hidden",
+    "special-token-excluded trajectory mean/last hidden and mask",
+    "four SLQP trajectory features"
+  ],
+  "rows": [
+    {
+      "id": "sample_0012572",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.4642181396484375,
+        0.3724771738052368,
+        3.016899585723877,
+        0.6863700747489929
+      ]
+    },
+    {
+      "id": "sample_0003696",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.87801456451416,
+        0.5649755597114563,
+        4.260520935058594,
+        1.0270291566848755
+      ]
+    },
+    {
+      "id": "sample_0006992",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.639915466308594,
+        0.3404701054096222,
+        2.8480377197265625,
+        0.5354659557342529
+      ]
+    },
+    {
+      "id": "sample_0007101",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.216681003570557,
+        0.5790919661521912,
+        4.5047807693481445,
+        0.8351312279701233
+      ]
+    },
+    {
+      "id": "sample_0006619",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.201048851013184,
+        0.6117668151855469,
+        4.164651870727539,
+        0.46580708026885986
+      ]
+    },
+    {
+      "id": "sample_0007778",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.9881887435913086,
+        0.27996060252189636,
+        3.2673542499542236,
+        0.13491901755332947
+      ]
+    },
+    {
+      "id": "sample_0002069",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.768852233886719,
+        0.5246933102607727,
+        3.700122117996216,
+        0.6983838081359863
+      ]
+    },
+    {
+      "id": "sample_0009834",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.501591682434082,
+        0.19874534010887146,
+        0.11542779207229614,
+        0.09679770469665527
+      ]
+    },
+    {
+      "id": "sample_0003053",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        6.077284336090088,
+        0.5770059823989868,
+        4.225484848022461,
+        0.850156843662262
+      ]
+    },
+    {
+      "id": "sample_0005197",
+      "response_length": 459,
+      "trajectory_response_length": 458,
+      "trajectory_features": [
+        6.408076286315918,
+        0.7433116436004639,
+        3.7436983585357666,
+        0.9687708020210266
+      ]
+    },
+    {
+      "id": "sample_0011837",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.923224687576294,
+        0.33766210079193115,
+        3.73262357711792,
+        0.2594662606716156
+      ]
+    },
+    {
+      "id": "sample_0006412",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.103015422821045,
+        0.2910245954990387,
+        2.651411771774292,
+        0.20962081849575043
+      ]
+    },
+    {
+      "id": "sample_0005887",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.895570278167725,
+        0.5824949741363525,
+        4.238913059234619,
+        0.8207532167434692
+      ]
+    },
+    {
+      "id": "sample_0007206",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.016976833343506,
+        0.27994504570961,
+        3.454803943634033,
+        0.1613062024116516
+      ]
+    },
+    {
+      "id": "sample_0012520",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.322038173675537,
+        0.2011614441871643,
+        0.1057497039437294,
+        0.07954289764165878
+      ]
+    },
+    {
+      "id": "sample_0000813",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.213683128356934,
+        0.7131819725036621,
+        4.512660026550293,
+        0.6480609774589539
+      ]
+    },
+    {
+      "id": "sample_0009284",
+      "response_length": 131,
+      "trajectory_response_length": 130,
+      "trajectory_features": [
+        5.123616695404053,
+        0.505652129650116,
+        3.1924490928649902,
+        0.6488115191459656
+      ]
+    },
+    {
+      "id": "sample_0008097",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.308384895324707,
+        0.1603827327489853,
+        2.9830870628356934,
+        0.22472724318504333
+      ]
+    },
+    {
+      "id": "sample_0005282",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8734519481658936,
+        0.33391037583351135,
+        3.7135062217712402,
+        0.26591765880584717
+      ]
+    },
+    {
+      "id": "sample_0009565",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.712620735168457,
+        0.28649330139160156,
+        3.3921573162078857,
+        0.14867356419563293
+      ]
+    },
+    {
+      "id": "sample_0003635",
+      "response_length": 4,
+      "trajectory_response_length": 3,
+      "trajectory_features": [
+        2.6987171173095703,
+        1.063735842704773,
+        3.0966813564300537,
+        0.3505130410194397
+      ]
+    },
+    {
+      "id": "sample_0012379",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8341054916381836,
+        0.34110432863235474,
+        3.693082332611084,
+        0.2510235905647278
+      ]
+    },
+    {
+      "id": "sample_0009718",
+      "response_length": 3,
+      "trajectory_response_length": 2,
+      "trajectory_features": [
+        3.939021110534668,
+        0.02638113498687744,
+        2.9426681995391846,
+        0.9699715971946716
+      ]
+    },
+    {
+      "id": "sample_0009974",
+      "response_length": 10,
+      "trajectory_response_length": 9,
+      "trajectory_features": [
+        3.4815938472747803,
+        0.6794936060905457,
+        2.7047808170318604,
+        0.48668575286865234
+      ]
+    },
+    {
+      "id": "sample_0010776",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.153200626373291,
+        0.4673596918582916,
+        4.341437816619873,
+        0.26463383436203003
+      ]
+    },
+    {
+      "id": "sample_0006699",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.292087554931641,
+        0.2941299080848694,
+        3.0528552532196045,
+        0.21689732372760773
+      ]
+    },
+    {
+      "id": "sample_0003082",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.874718189239502,
+        0.5316423773765564,
+        3.9649813175201416,
+        0.8989940285682678
+      ]
+    },
+    {
+      "id": "sample_0005002",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.174543380737305,
+        0.7604433298110962,
+        4.406143665313721,
+        0.7349225878715515
+      ]
+    },
+    {
+      "id": "sample_0002978",
+      "response_length": 2667,
+      "trajectory_response_length": 2666,
+      "trajectory_features": [
+        6.096787452697754,
+        0.6144973635673523,
+        4.223322868347168,
+        0.8592382669448853
+      ]
+    },
+    {
+      "id": "sample_0006533",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.770988702774048,
+        0.2946016490459442,
+        3.4138946533203125,
+        0.15919938683509827
+      ]
+    },
+    {
+      "id": "sample_0003607",
+      "response_length": 700,
+      "trajectory_response_length": 699,
+      "trajectory_features": [
+        6.092419624328613,
+        0.631388247013092,
+        4.223886013031006,
+        0.849762499332428
+      ]
+    },
+    {
+      "id": "sample_0005950",
+      "response_length": 579,
+      "trajectory_response_length": 578,
+      "trajectory_features": [
+        5.620235443115234,
+        0.6738280653953552,
+        4.261636734008789,
+        0.8858785629272461
+      ]
+    },
+    {
+      "id": "sample_0007042",
+      "response_length": 461,
+      "trajectory_response_length": 460,
+      "trajectory_features": [
+        5.968508720397949,
+        0.7644935250282288,
+        4.055653095245361,
+        1.0570464134216309
+      ]
+    },
+    {
+      "id": "sample_0002470",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.882136344909668,
+        0.3700571060180664,
+        3.7545833587646484,
+        0.28408777713775635
+      ]
+    },
+    {
+      "id": "sample_0012918",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.995678901672363,
+        0.636569619178772,
+        4.131775379180908,
+        0.8566116094589233
+      ]
+    },
+    {
+      "id": "sample_0006804",
+      "response_length": 47,
+      "trajectory_response_length": 46,
+      "trajectory_features": [
+        4.951473236083984,
+        0.4668079614639282,
+        2.6872334480285645,
+        0.6109233498573303
+      ]
+    },
+    {
+      "id": "sample_0009383",
+      "response_length": 455,
+      "trajectory_response_length": 454,
+      "trajectory_features": [
+        5.763472557067871,
+        0.4830673336982727,
+        3.763397455215454,
+        0.8058023452758789
+      ]
+    },
+    {
+      "id": "sample_0012420",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.223703384399414,
+        0.6755980253219604,
+        4.366759300231934,
+        0.364169716835022
+      ]
+    },
+    {
+      "id": "sample_0001353",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.819368362426758,
+        0.31509044766426086,
+        3.3899569511413574,
+        0.15462923049926758
+      ]
+    },
+    {
+      "id": "sample_0011037",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.298389434814453,
+        0.5240188241004944,
+        4.236162185668945,
+        0.4585479199886322
+      ]
+    },
+    {
+      "id": "sample_0008616",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.0673747062683105,
+        0.5648919939994812,
+        4.389883995056152,
+        0.25368639826774597
+      ]
+    },
+    {
+      "id": "sample_0011405",
+      "response_length": 237,
+      "trajectory_response_length": 236,
+      "trajectory_features": [
+        5.545502185821533,
+        0.7091123461723328,
+        3.4231207370758057,
+        0.7774760723114014
+      ]
+    },
+    {
+      "id": "sample_0009529",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.206993103027344,
+        0.5756981372833252,
+        4.375734329223633,
+        0.3575895428657532
+      ]
+    },
+    {
+      "id": "sample_0008071",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.740607738494873,
+        0.5246139764785767,
+        3.8836262226104736,
+        0.7532827258110046
+      ]
+    },
+    {
+      "id": "sample_0011863",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8026843070983887,
+        0.3248900771141052,
+        3.241892099380493,
+        0.16071923077106476
+      ]
+    },
+    {
+      "id": "sample_0005524",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.849391460418701,
+        0.29364463686943054,
+        3.6130566596984863,
+        0.18213747441768646
+      ]
+    },
+    {
+      "id": "sample_0008970",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.823159217834473,
+        0.7722800374031067,
+        4.256794452667236,
+        0.4416821300983429
+      ]
+    },
+    {
+      "id": "sample_0011103",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.7796595096588135,
+        0.31924259662628174,
+        3.394529342651367,
+        0.15779832005500793
+      ]
+    },
+    {
+      "id": "sample_0010485",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.524626731872559,
+        0.44565460085868835,
+        3.5435190200805664,
+        0.7383524179458618
+      ]
+    },
+    {
+      "id": "sample_0011467",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8078229427337646,
+        0.3222149610519409,
+        3.7415499687194824,
+        0.26963576674461365
+      ]
+    },
+    {
+      "id": "sample_0009949",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.84661865234375,
+        0.38993147015571594,
+        3.7297282218933105,
+        0.14325730502605438
+      ]
+    },
+    {
+      "id": "sample_0011104",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.136627197265625,
+        0.5348626375198364,
+        3.4027388095855713,
+        0.5832722187042236
+      ]
+    },
+    {
+      "id": "sample_0010255",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.066879749298096,
+        0.30287352204322815,
+        3.230867862701416,
+        0.14201952517032623
+      ]
+    },
+    {
+      "id": "sample_0006125",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.0120015144348145,
+        0.557776153087616,
+        4.130396366119385,
+        0.8919233679771423
+      ]
+    },
+    {
+      "id": "sample_0012146",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.110616207122803,
+        0.7773734331130981,
+        4.3307085037231445,
+        0.8127283453941345
+      ]
+    },
+    {
+      "id": "sample_0010826",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8708395957946777,
+        0.3411928415298462,
+        3.6214280128479004,
+        0.19881455600261688
+      ]
+    },
+    {
+      "id": "sample_0000407",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.205444812774658,
+        0.5733129382133484,
+        4.388396263122559,
+        0.35603684186935425
+      ]
+    },
+    {
+      "id": "sample_0008568",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.780450820922852,
+        0.7260768413543701,
+        3.7607126235961914,
+        0.761398196220398
+      ]
+    },
+    {
+      "id": "sample_0007139",
+      "response_length": 759,
+      "trajectory_response_length": 758,
+      "trajectory_features": [
+        5.770064830780029,
+        0.3989053964614868,
+        3.5370330810546875,
+        0.8012555241584778
+      ]
+    },
+    {
+      "id": "sample_0001218",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.731510639190674,
+        0.5220982432365417,
+        3.5256359577178955,
+        0.9841251373291016
+      ]
+    },
+    {
+      "id": "sample_0006843",
+      "response_length": 5,
+      "trajectory_response_length": 4,
+      "trajectory_features": [
+        3.8952267169952393,
+        1.3533354997634888,
+        3.753004312515259,
+        0.8817282915115356
+      ]
+    },
+    {
+      "id": "sample_0001919",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.698513031005859,
+        0.5349908471107483,
+        3.5403237342834473,
+        0.7659024596214294
+      ]
+    },
+    {
+      "id": "sample_0006949",
+      "response_length": 458,
+      "trajectory_response_length": 457,
+      "trajectory_features": [
+        6.072929382324219,
+        0.6094072461128235,
+        4.256833553314209,
+        1.2910631895065308
+      ]
+    },
+    {
+      "id": "sample_0002723",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8123068809509277,
+        0.2874956727027893,
+        3.4169983863830566,
+        0.15675613284111023
+      ]
+    },
+    {
+      "id": "sample_0009952",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.810896635055542,
+        0.4037644863128662,
+        3.824326515197754,
+        0.18202362954616547
+      ]
+    },
+    {
+      "id": "sample_0013083",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.262057304382324,
+        0.2457709014415741,
+        3.2478346824645996,
+        0.06909505277872086
+      ]
+    },
+    {
+      "id": "sample_0005127",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.487346649169922,
+        0.19658233225345612,
+        0.10348009318113327,
+        0.07774929702281952
+      ]
+    },
+    {
+      "id": "sample_0011486",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.5561938285827637,
+        0.5040964484214783,
+        3.6240766048431396,
+        0.15542805194854736
+      ]
+    },
+    {
+      "id": "sample_0008387",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.258753776550293,
+        0.4818785488605499,
+        3.9532434940338135,
+        0.33759236335754395
+      ]
+    },
+    {
+      "id": "sample_0006782",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.706893444061279,
+        0.3978787660598755,
+        3.2349953651428223,
+        0.7442572116851807
+      ]
+    },
+    {
+      "id": "sample_0013416",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.715165615081787,
+        0.5638132691383362,
+        3.719834089279175,
+        0.11748287081718445
+      ]
+    },
+    {
+      "id": "sample_0010941",
+      "response_length": 15,
+      "trajectory_response_length": 14,
+      "trajectory_features": [
+        4.646787643432617,
+        0.6970464587211609,
+        3.137476682662964,
+        0.6814204454421997
+      ]
+    },
+    {
+      "id": "sample_0011856",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.198065757751465,
+        0.5783664584159851,
+        4.277624607086182,
+        0.7561725974082947
+      ]
+    },
+    {
+      "id": "sample_0013339",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.961940765380859,
+        0.5772971510887146,
+        4.147307395935059,
+        0.31056350469589233
+      ]
+    },
+    {
+      "id": "sample_0005367",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8076446056365967,
+        0.3062404990196228,
+        3.3593828678131104,
+        0.1871616244316101
+      ]
+    },
+    {
+      "id": "sample_0009190",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.618332862854004,
+        0.7076835632324219,
+        4.548336029052734,
+        0.4397753179073334
+      ]
+    },
+    {
+      "id": "sample_0011180",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.078419208526611,
+        0.3682955503463745,
+        0.09568259865045547,
+        0.10335284471511841
+      ]
+    },
+    {
+      "id": "sample_0001770",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.220541477203369,
+        0.40226730704307556,
+        3.2037863731384277,
+        0.22251754999160767
+      ]
+    },
+    {
+      "id": "sample_0006303",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.076976776123047,
+        0.30117666721343994,
+        3.239833354949951,
+        0.13462720811367035
+      ]
+    },
+    {
+      "id": "sample_0009779",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.046570777893066,
+        0.2784818112850189,
+        3.2463579177856445,
+        0.1541460007429123
+      ]
+    },
+    {
+      "id": "sample_0003137",
+      "response_length": 745,
+      "trajectory_response_length": 744,
+      "trajectory_features": [
+        5.974029064178467,
+        0.6767250299453735,
+        4.168828010559082,
+        1.0049455165863037
+      ]
+    },
+    {
+      "id": "sample_0009146",
+      "response_length": 326,
+      "trajectory_response_length": 325,
+      "trajectory_features": [
+        5.969979286193848,
+        0.4540732502937317,
+        4.056889533996582,
+        1.0069047212600708
+      ]
+    },
+    {
+      "id": "sample_0000285",
+      "response_length": 34,
+      "trajectory_response_length": 33,
+      "trajectory_features": [
+        4.966671943664551,
+        0.3573121130466461,
+        3.075127124786377,
+        0.6025345325469971
+      ]
+    },
+    {
+      "id": "sample_0013441",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.175848484039307,
+        0.6554637551307678,
+        4.378715515136719,
+        0.3489481806755066
+      ]
+    },
+    {
+      "id": "sample_0001714",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.241641998291016,
+        0.2847132384777069,
+        3.89945125579834,
+        0.23388533294200897
+      ]
+    },
+    {
+      "id": "sample_0007925",
+      "response_length": 3855,
+      "trajectory_response_length": 3854,
+      "trajectory_features": [
+        6.021131992340088,
+        0.595535397529602,
+        4.3490142822265625,
+        0.8134765028953552
+      ]
+    },
+    {
+      "id": "sample_0010788",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.358641624450684,
+        0.8490132689476013,
+        4.114192485809326,
+        0.4791821539402008
+      ]
+    },
+    {
+      "id": "sample_0004929",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.869170188903809,
+        0.5512942671775818,
+        4.41238260269165,
+        0.7060285806655884
+      ]
+    },
+    {
+      "id": "sample_0007327",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.218739032745361,
+        0.45039471983909607,
+        4.377288818359375,
+        0.3351193368434906
+      ]
+    },
+    {
+      "id": "sample_0012996",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.091233253479004,
+        0.21963420510292053,
+        3.455209970474243,
+        0.1565805971622467
+      ]
+    },
+    {
+      "id": "sample_0011962",
+      "response_length": 1380,
+      "trajectory_response_length": 1379,
+      "trajectory_features": [
+        6.2423787117004395,
+        0.6550619006156921,
+        4.327932834625244,
+        0.8009299039840698
+      ]
+    },
+    {
+      "id": "sample_0001440",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.772732734680176,
+        0.5783215165138245,
+        3.643050193786621,
+        0.9019577503204346
+      ]
+    },
+    {
+      "id": "sample_0002303",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.592729568481445,
+        0.34462377429008484,
+        2.4702529907226562,
+        1.2048105001449585
+      ]
+    },
+    {
+      "id": "sample_0007965",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.203647613525391,
+        0.4015650451183319,
+        3.1865322589874268,
+        0.13628581166267395
+      ]
+    },
+    {
+      "id": "sample_0012160",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.6813039779663086,
+        0.28480470180511475,
+        3.3704144954681396,
+        0.17502181231975555
+      ]
+    },
+    {
+      "id": "sample_0001915",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.26556921005249,
+        0.6728801727294922,
+        4.36899995803833,
+        0.3715490698814392
+      ]
+    },
+    {
+      "id": "sample_0011909",
+      "response_length": 238,
+      "trajectory_response_length": 237,
+      "trajectory_features": [
+        5.309506893157959,
+        0.43857914209365845,
+        3.3745996952056885,
+        0.7170101404190063
+      ]
+    },
+    {
+      "id": "sample_0008783",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.690362453460693,
+        0.6352227330207825,
+        4.521810531616211,
+        0.1771978735923767
+      ]
+    },
+    {
+      "id": "sample_0006150",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.838174343109131,
+        0.30518022179603577,
+        3.39643931388855,
+        0.17159821093082428
+      ]
+    },
+    {
+      "id": "sample_0012664",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.5742902755737305,
+        0.9507003426551819,
+        4.404097557067871,
+        0.27567392587661743
+      ]
+    },
+    {
+      "id": "sample_0001134",
+      "response_length": 629,
+      "trajectory_response_length": 628,
+      "trajectory_features": [
+        6.057125091552734,
+        0.5653579831123352,
+        4.474911212921143,
+        1.2622877359390259
+      ]
+    },
+    {
+      "id": "sample_0006787",
+      "response_length": 8,
+      "trajectory_response_length": 7,
+      "trajectory_features": [
+        4.825959205627441,
+        0.22196760773658752,
+        2.4981019496917725,
+        0.9966405630111694
+      ]
+    },
+    {
+      "id": "sample_0012019",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.232996940612793,
+        0.23805756866931915,
+        3.8196072578430176,
+        0.3162629306316376
+      ]
+    },
+    {
+      "id": "sample_0011003",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.812002182006836,
+        0.37666451930999756,
+        3.4152798652648926,
+        0.09883531183004379
+      ]
+    },
+    {
+      "id": "sample_0005829",
+      "response_length": 9,
+      "trajectory_response_length": 8,
+      "trajectory_features": [
+        4.002433776855469,
+        1.3139957189559937,
+        3.523258924484253,
+        0.7636759877204895
+      ]
+    },
+    {
+      "id": "sample_0000016",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.118363857269287,
+        0.2627044916152954,
+        3.41571044921875,
+        0.1626390516757965
+      ]
+    },
+    {
+      "id": "sample_0000798",
+      "response_length": 1310,
+      "trajectory_response_length": 1309,
+      "trajectory_features": [
+        5.862982273101807,
+        0.7189305424690247,
+        3.8465335369110107,
+        0.9307937026023865
+      ]
+    },
+    {
+      "id": "sample_0001369",
+      "response_length": 210,
+      "trajectory_response_length": 209,
+      "trajectory_features": [
+        5.963413715362549,
+        0.47439315915107727,
+        3.1539697647094727,
+        0.7636953592300415
+      ]
+    },
+    {
+      "id": "sample_0003455",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.830976486206055,
+        0.4771585166454315,
+        4.012685298919678,
+        0.7090473175048828
+      ]
+    },
+    {
+      "id": "sample_0004976",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.075408935546875,
+        0.40667062997817993,
+        4.25162410736084,
+        0.26904764771461487
+      ]
+    },
+    {
+      "id": "sample_0003295",
+      "response_length": 99,
+      "trajectory_response_length": 98,
+      "trajectory_features": [
+        5.2696003913879395,
+        0.5599366426467896,
+        2.360628366470337,
+        0.7728837132453918
+      ]
+    },
+    {
+      "id": "sample_0008801",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.362549781799316,
+        0.41317635774612427,
+        3.4709534645080566,
+        0.28154104948043823
+      ]
+    },
+    {
+      "id": "sample_0000794",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.73687744140625,
+        0.32415613532066345,
+        3.2913732528686523,
+        0.14789225161075592
+      ]
+    },
+    {
+      "id": "sample_0001585",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.820098876953125,
+        0.4700411260128021,
+        3.018822193145752,
+        0.2803444564342499
+      ]
+    },
+    {
+      "id": "sample_0004170",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.180993556976318,
+        0.23046480119228363,
+        3.4207253456115723,
+        0.21514029800891876
+      ]
+    },
+    {
+      "id": "sample_0008283",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.197386741638184,
+        0.5750246047973633,
+        4.369612693786621,
+        0.3517395555973053
+      ]
+    },
+    {
+      "id": "sample_0003817",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.217629432678223,
+        0.6467075347900391,
+        4.37760591506958,
+        0.3526141941547394
+      ]
+    },
+    {
+      "id": "sample_0011156",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.205537796020508,
+        0.4411478638648987,
+        4.2121992111206055,
+        0.5094241499900818
+      ]
+    },
+    {
+      "id": "sample_0011095",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.472082614898682,
+        0.26250940561294556,
+        2.9641566276550293,
+        0.27013662457466125
+      ]
+    },
+    {
+      "id": "sample_0005794",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.124438762664795,
+        0.7541515231132507,
+        4.440896034240723,
+        0.7215505242347717
+      ]
+    },
+    {
+      "id": "sample_0007761",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.7704296112060547,
+        0.29279419779777527,
+        3.4403023719787598,
+        0.14098483324050903
+      ]
+    },
+    {
+      "id": "sample_0006595",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.914576530456543,
+        0.29308760166168213,
+        4.0157012939453125,
+        0.38050028681755066
+      ]
+    },
+    {
+      "id": "sample_0008949",
+      "response_length": 5,
+      "trajectory_response_length": 4,
+      "trajectory_features": [
+        2.572793960571289,
+        0.6046205163002014,
+        2.1272425651550293,
+        0.5758661031723022
+      ]
+    },
+    {
+      "id": "sample_0007599",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.9117236137390137,
+        0.35183560848236084,
+        3.458888053894043,
+        0.19198158383369446
+      ]
+    },
+    {
+      "id": "sample_0000927",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.889731407165527,
+        0.4918799102306366,
+        3.636498212814331,
+        0.5716395378112793
+      ]
+    },
+    {
+      "id": "sample_0005612",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.313851356506348,
+        0.6082099676132202,
+        4.436777591705322,
+        0.39628100395202637
+      ]
+    },
+    {
+      "id": "sample_0013363",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.755857467651367,
+        0.6585738658905029,
+        3.5533080101013184,
+        0.7711560130119324
+      ]
+    },
+    {
+      "id": "sample_0011263",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8563122749328613,
+        0.30140411853790283,
+        3.400977849960327,
+        0.16304464638233185
+      ]
+    },
+    {
+      "id": "sample_0008133",
+      "response_length": 345,
+      "trajectory_response_length": 344,
+      "trajectory_features": [
+        5.941458225250244,
+        0.6042936444282532,
+        4.228648662567139,
+        0.9526880979537964
+      ]
+    },
+    {
+      "id": "sample_0010521",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.281403064727783,
+        0.5458903908729553,
+        4.400659561157227,
+        0.34733837842941284
+      ]
+    },
+    {
+      "id": "sample_0008434",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.052352428436279,
+        0.3198729455471039,
+        3.3188071250915527,
+        0.1515221744775772
+      ]
+    },
+    {
+      "id": "sample_0004419",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.637729644775391,
+        0.3815179765224457,
+        3.0686373710632324,
+        0.7005454897880554
+      ]
+    },
+    {
+      "id": "sample_0007443",
+      "response_length": 1636,
+      "trajectory_response_length": 1635,
+      "trajectory_features": [
+        5.999894618988037,
+        0.6037541627883911,
+        4.0661163330078125,
+        1.0665689706802368
+      ]
+    },
+    {
+      "id": "sample_0000077",
+      "response_length": 973,
+      "trajectory_response_length": 972,
+      "trajectory_features": [
+        6.147575855255127,
+        0.645907998085022,
+        4.330124378204346,
+        1.1745634078979492
+      ]
+    },
+    {
+      "id": "sample_0013446",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.061101913452148,
+        0.42796894907951355,
+        3.9205262660980225,
+        0.35125091671943665
+      ]
+    },
+    {
+      "id": "sample_0004305",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.207032680511475,
+        0.28434690833091736,
+        3.383871555328369,
+        0.12040507793426514
+      ]
+    },
+    {
+      "id": "sample_0002722",
+      "response_length": 1006,
+      "trajectory_response_length": 1005,
+      "trajectory_features": [
+        5.860257148742676,
+        0.6810871958732605,
+        4.254946231842041,
+        1.0173412561416626
+      ]
+    },
+    {
+      "id": "sample_0004771",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.10101318359375,
+        0.4136488139629364,
+        3.2588884830474854,
+        0.0915902704000473
+      ]
+    },
+    {
+      "id": "sample_0005945",
+      "response_length": 494,
+      "trajectory_response_length": 493,
+      "trajectory_features": [
+        6.143852710723877,
+        0.6367130279541016,
+        4.362701892852783,
+        0.9004141688346863
+      ]
+    },
+    {
+      "id": "sample_0004615",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.9728667736053467,
+        0.36846956610679626,
+        3.808803081512451,
+        0.27941304445266724
+      ]
+    },
+    {
+      "id": "sample_0002717",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.347540855407715,
+        0.2576276361942291,
+        3.2111310958862305,
+        0.2637576460838318
+      ]
+    },
+    {
+      "id": "sample_0011072",
+      "response_length": 550,
+      "trajectory_response_length": 549,
+      "trajectory_features": [
+        6.212034225463867,
+        0.6572688221931458,
+        4.472550392150879,
+        1.0082952976226807
+      ]
+    },
+    {
+      "id": "sample_0001162",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.643267631530762,
+        0.24658922851085663,
+        0.11931277811527252,
+        0.13816280663013458
+      ]
+    },
+    {
+      "id": "sample_0012765",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.73624849319458,
+        0.356452614068985,
+        3.85129976272583,
+        0.17282113432884216
+      ]
+    },
+    {
+      "id": "sample_0003730",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.3254499435424805,
+        0.22065146267414093,
+        0.10361379384994507,
+        0.09538469463586807
+      ]
+    },
+    {
+      "id": "sample_0011918",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.336438179016113,
+        0.1971162110567093,
+        2.9911255836486816,
+        0.26319319009780884
+      ]
+    },
+    {
+      "id": "sample_0010040",
+      "response_length": 1038,
+      "trajectory_response_length": 1037,
+      "trajectory_features": [
+        6.268549919128418,
+        0.6489328145980835,
+        4.444775581359863,
+        0.8301217555999756
+      ]
+    },
+    {
+      "id": "sample_0005402",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.205292701721191,
+        0.5840471982955933,
+        4.202263832092285,
+        0.3846026360988617
+      ]
+    },
+    {
+      "id": "sample_0000303",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.312280178070068,
+        0.5609638094902039,
+        4.3950347900390625,
+        0.35525721311569214
+      ]
+    },
+    {
+      "id": "sample_0001282",
+      "response_length": 524,
+      "trajectory_response_length": 523,
+      "trajectory_features": [
+        6.070587635040283,
+        0.5836642980575562,
+        4.19075345993042,
+        1.0220363140106201
+      ]
+    },
+    {
+      "id": "sample_0013342",
+      "response_length": 923,
+      "trajectory_response_length": 922,
+      "trajectory_features": [
+        6.260014533996582,
+        0.6553980112075806,
+        4.5151143074035645,
+        1.0206941366195679
+      ]
+    },
+    {
+      "id": "sample_0009023",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.528072357177734,
+        0.5758614540100098,
+        3.365701675415039,
+        0.20653772354125977
+      ]
+    },
+    {
+      "id": "sample_0008491",
+      "response_length": 12,
+      "trajectory_response_length": 11,
+      "trajectory_features": [
+        3.6842596530914307,
+        1.3372166156768799,
+        2.864889144897461,
+        0.8699716925621033
+      ]
+    },
+    {
+      "id": "sample_0003150",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.091845989227295,
+        0.3028589189052582,
+        3.2690634727478027,
+        0.12144585698843002
+      ]
+    },
+    {
+      "id": "sample_0007357",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.045299530029297,
+        0.6170494556427002,
+        4.189724922180176,
+        0.7955275177955627
+      ]
+    },
+    {
+      "id": "sample_0002547",
+      "response_length": 516,
+      "trajectory_response_length": 515,
+      "trajectory_features": [
+        6.051325798034668,
+        0.6273394823074341,
+        4.378426551818848,
+        0.8612100481987
+      ]
+    },
+    {
+      "id": "sample_0007913",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.908560276031494,
+        0.2938453257083893,
+        3.3941638469696045,
+        0.14223864674568176
+      ]
+    },
+    {
+      "id": "sample_0009468",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.203088760375977,
+        0.5985768437385559,
+        4.38017463684082,
+        0.36560508608818054
+      ]
+    },
+    {
+      "id": "sample_0008743",
+      "response_length": 785,
+      "trajectory_response_length": 784,
+      "trajectory_features": [
+        6.23276424407959,
+        0.6320151686668396,
+        4.326920986175537,
+        1.0423576831817627
+      ]
+    },
+    {
+      "id": "sample_0012915",
+      "response_length": 535,
+      "trajectory_response_length": 534,
+      "trajectory_features": [
+        5.792758941650391,
+        0.7131462097167969,
+        3.7712440490722656,
+        1.192169189453125
+      ]
+    },
+    {
+      "id": "sample_0002916",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.981075286865234,
+        0.5665695071220398,
+        4.440668106079102,
+        0.773160994052887
+      ]
+    },
+    {
+      "id": "sample_0012702",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.869802474975586,
+        0.3217974305152893,
+        3.4068024158477783,
+        0.16110044717788696
+      ]
+    },
+    {
+      "id": "sample_0011705",
+      "response_length": 436,
+      "trajectory_response_length": 435,
+      "trajectory_features": [
+        6.169067859649658,
+        0.6348053216934204,
+        4.0750932693481445,
+        0.9328632354736328
+      ]
+    },
+    {
+      "id": "sample_0002144",
+      "response_length": 414,
+      "trajectory_response_length": 413,
+      "trajectory_features": [
+        6.040439128875732,
+        0.7089457511901855,
+        3.9869492053985596,
+        1.180343508720398
+      ]
+    },
+    {
+      "id": "sample_0003565",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.171537399291992,
+        0.5542236566543579,
+        4.576746463775635,
+        0.39614301919937134
+      ]
+    },
+    {
+      "id": "sample_0008341",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.099075794219971,
+        0.7572556138038635,
+        4.2728376388549805,
+        0.8497717976570129
+      ]
+    },
+    {
+      "id": "sample_0004963",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.800196647644043,
+        0.2935146987438202,
+        3.3561854362487793,
+        0.1924428939819336
+      ]
+    },
+    {
+      "id": "sample_0010258",
+      "response_length": 1031,
+      "trajectory_response_length": 1030,
+      "trajectory_features": [
+        6.168226718902588,
+        0.5959961414337158,
+        4.358112335205078,
+        0.8592264652252197
+      ]
+    },
+    {
+      "id": "sample_0011161",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.186226844787598,
+        0.6286901235580444,
+        4.450322151184082,
+        0.3250443935394287
+      ]
+    },
+    {
+      "id": "sample_0003103",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.661715030670166,
+        0.4909801781177521,
+        3.7110257148742676,
+        0.5906229019165039
+      ]
+    },
+    {
+      "id": "sample_0006227",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.6886730194091797,
+        0.34144943952560425,
+        3.633596897125244,
+        0.28295257687568665
+      ]
+    },
+    {
+      "id": "sample_0008358",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.990725517272949,
+        0.1998993307352066,
+        3.5994274616241455,
+        0.18443027138710022
+      ]
+    },
+    {
+      "id": "sample_0013510",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.240167617797852,
+        0.5844388604164124,
+        4.356294631958008,
+        0.3682349920272827
+      ]
+    },
+    {
+      "id": "sample_0008736",
+      "response_length": 891,
+      "trajectory_response_length": 890,
+      "trajectory_features": [
+        5.5693817138671875,
+        0.446536660194397,
+        3.962692975997925,
+        0.7017386555671692
+      ]
+    },
+    {
+      "id": "sample_0007623",
+      "response_length": 588,
+      "trajectory_response_length": 587,
+      "trajectory_features": [
+        6.122482776641846,
+        0.6924247741699219,
+        4.134573936462402,
+        0.8592244386672974
+      ]
+    },
+    {
+      "id": "sample_0010694",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.67457389831543,
+        0.30007776618003845,
+        0.10093793272972107,
+        0.05115016922354698
+      ]
+    },
+    {
+      "id": "sample_0004853",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.2897186279296875,
+        0.5606194138526917,
+        3.4916956424713135,
+        0.8049888014793396
+      ]
+    },
+    {
+      "id": "sample_0011885",
+      "response_length": 169,
+      "trajectory_response_length": 168,
+      "trajectory_features": [
+        5.311518669128418,
+        0.4394111931324005,
+        3.0932998657226562,
+        0.8244839310646057
+      ]
+    },
+    {
+      "id": "sample_0000624",
+      "response_length": 1729,
+      "trajectory_response_length": 1728,
+      "trajectory_features": [
+        5.979969024658203,
+        0.4903317391872406,
+        4.231904029846191,
+        0.6941724419593811
+      ]
+    },
+    {
+      "id": "sample_0008411",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.419051647186279,
+        0.17219853401184082,
+        0.1228034645318985,
+        0.10541468858718872
+      ]
+    },
+    {
+      "id": "sample_0012542",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.20662784576416,
+        0.5501313209533691,
+        4.007566452026367,
+        0.42728883028030396
+      ]
+    },
+    {
+      "id": "sample_0002444",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.130258560180664,
+        0.3982200026512146,
+        4.428820610046387,
+        0.31555089354515076
+      ]
+    },
+    {
+      "id": "sample_0003358",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.533603668212891,
+        0.38642510771751404,
+        3.0251550674438477,
+        0.6982564926147461
+      ]
+    },
+    {
+      "id": "sample_0000609",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.166003227233887,
+        0.5003565549850464,
+        3.938483238220215,
+        0.3576079308986664
+      ]
+    },
+    {
+      "id": "sample_0000339",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.048461437225342,
+        0.3883434534072876,
+        4.1026716232299805,
+        0.37391534447669983
+      ]
+    },
+    {
+      "id": "sample_0009332",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.89066219329834,
+        0.3352467715740204,
+        3.6814627647399902,
+        0.22836019098758698
+      ]
+    },
+    {
+      "id": "sample_0002448",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.06320333480835,
+        0.2801133692264557,
+        3.2275800704956055,
+        0.14768962562084198
+      ]
+    },
+    {
+      "id": "sample_0012777",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.278223037719727,
+        0.23869039118289948,
+        3.5040292739868164,
+        0.23373785614967346
+      ]
+    },
+    {
+      "id": "sample_0006703",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.95407247543335,
+        0.5151852965354919,
+        3.914585590362549,
+        0.35248637199401855
+      ]
+    },
+    {
+      "id": "sample_0007617",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.047392845153809,
+        0.3206508159637451,
+        3.2551608085632324,
+        0.16099874675273895
+      ]
+    },
+    {
+      "id": "sample_0006882",
+      "response_length": 43,
+      "trajectory_response_length": 42,
+      "trajectory_features": [
+        5.305695533752441,
+        0.40455517172813416,
+        2.315896987915039,
+        0.6516203880310059
+      ]
+    },
+    {
+      "id": "sample_0005388",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.491178035736084,
+        0.3793871998786926,
+        3.7036969661712646,
+        0.6723203063011169
+      ]
+    },
+    {
+      "id": "sample_0005923",
+      "response_length": 36,
+      "trajectory_response_length": 35,
+      "trajectory_features": [
+        4.226406574249268,
+        1.1083015203475952,
+        2.7495572566986084,
+        0.8693321347236633
+      ]
+    },
+    {
+      "id": "sample_0000434",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.9522764682769775,
+        0.36303627490997314,
+        3.4162609577178955,
+        0.16047978401184082
+      ]
+    },
+    {
+      "id": "sample_0001413",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.8144032955169678,
+        0.31678351759910583,
+        3.4029996395111084,
+        0.166361004114151
+      ]
+    },
+    {
+      "id": "sample_0009763",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        3.7301738262176514,
+        0.3523266017436981,
+        3.413362503051758,
+        0.2007412165403366
+      ]
+    },
+    {
+      "id": "sample_0012817",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.252631664276123,
+        0.34963056445121765,
+        3.3199801445007324,
+        0.1603023111820221
+      ]
+    },
+    {
+      "id": "sample_0012363",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.825507640838623,
+        0.2663850784301758,
+        1.1586499214172363,
+        1.1058151721954346
+      ]
+    },
+    {
+      "id": "sample_0006078",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        5.111145973205566,
+        0.2553715407848358,
+        1.781770944595337,
+        0.9879788160324097
+      ]
+    },
+    {
+      "id": "sample_0007000",
+      "response_length": 4096,
+      "trajectory_response_length": 4096,
+      "trajectory_features": [
+        4.579824447631836,
+        0.38134750723838806,
+        3.0434961318969727,
+        0.6998364329338074
+      ]
+    }
+  ]
+}

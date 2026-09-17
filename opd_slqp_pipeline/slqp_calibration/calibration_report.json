@@ -1,0 +1,54 @@
+{
+  "method": "student-only four-feature standardized PCA-1, quality-oriented, KMeans-2 midpoint",
+  "samples": 200,
+  "quality_score_min": 25.0,
+  "quality_score_mean": 29.8625,
+  "quality_score_median": 25.0,
+  "quality_score_max": 99.0625,
+  "quality_pearson": 0.5390883694457108,
+  "quality_spearman": 0.6324917558953843,
+  "projection_length_pearson": -0.5125851048711443,
+  "quality_length_pearson": -0.5606519508469331,
+  "quality_length_spearman": -0.697852373519508,
+  "length_controlled_quality_pearson": 0.5030170519457607,
+  "feature_projection_correlations": {
+    "response_prompt_distance_mean": 0.8198753721184466,
+    "response_prompt_distance_std": 0.7483611922051304,
+    "response_step_distance_mean": 0.6337275187081477,
+    "response_step_distance_std": 0.855746975064491
+  },
+  "cluster_centers": [
+    -1.4882594021244842,
+    1.2176667835563966
+  ],
+  "cluster_sizes": [
+    90,
+    110
+  ],
+  "cluster_quality_means": [
+    25.14236111111111,
+    33.72443181818182
+  ],
+  "cluster_response_length_means": [
+    3733.5333333333333,
+    2770.427272727273
+  ],
+  "cluster_quality_gap": 8.58207070707071,
+  "silhouette_1d": 0.6663043188408987,
+  "extreme_quartile_count": 100,
+  "bottom_quartile_score_range": [
+    25.0,
+    25.0
+  ],
+  "top_quartile_score_range": [
+    28.125,
+    99.0625
+  ],
+  "extreme_quartile_accuracy": 0.78,
+  "extreme_quartile_auc": 0.9044,
+  "bootstrap_runs_completed": 500,
+  "bootstrap_direction_cosine_mean": 0.9998395662952366,
+  "bootstrap_direction_cosine_p05": 0.9995441808305059,
+  "boundary": -0.1352963092840438,
+  "active_fraction_at_calibration": 0.45
+}

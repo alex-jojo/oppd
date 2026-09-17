@@ -1,0 +1,26 @@
+{
+  "samples": 200,
+  "quality_min": 25.0,
+  "quality_mean": 29.8625,
+  "quality_median": 25.0,
+  "quality_max": 99.0625,
+  "quality_std": 10.273678823211284,
+  "answer_status_counts": {
+    "no_final_answer": 154,
+    "wrong": 38,
+    "partially_correct": 4,
+    "correct": 4
+  },
+  "trajectory_status_counts": {
+    "repetitive": 129,
+    "malformed": 22,
+    "truncated_but_useful": 4,
+    "complete": 38,
+    "truncated": 1,
+    "off_topic": 6
+  },
+  "finish_reason_counts": {
+    "length": 149,
+    "stop": 51
+  }
+}

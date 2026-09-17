@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Virtual env
+.venv/
+venv/
+env/
+/.venv-backups/
+
+# Logs
+*.log
+
+# HF cache / datasets
+hf_cache/
+*_hf_cache_*
+.cache/
+/.hf_home/
+*.arrow
+*.parquet
+
+# Checkpoints / model weights / outputs
+checkpoints/
+outputs/
+results/
+runs/
+wandb/
+tensorboard/
+lightning_logs/
+ray_results/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# Generated SLQP captures and run artifacts
+slqp_capture_*/
+/opd_slqp_run*/
+*.npz
+*.npy
+
+# Local backup/export copies (canonical source stays in the live project dirs)
+/opd_slqp_full_pipeline_*/
+/slqp_collect_*_server_*/
+/slqp_collect_resume_fix_*/
+*.bak
+*.bak-*
+*.orig
+*.rej
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+
+# Vast.ai machine-local helper links
+/AGENTS.md
+/CLAUDE.md
+
+# OS
+.DS_Store
